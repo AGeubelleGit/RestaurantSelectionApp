@@ -9,5 +9,5 @@
 .externalNativeBuild
 .idea/*
 
-#API KEY
+#API KEY FILE
 *Zomato.java
