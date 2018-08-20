@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <!-- GPS strings-->
+    <string name="location_button_text">Show Location</string>
+    <string name="default_location_text">Latitude:\nLongitude:</string>
+    <string name="latitude_string">Latitude</string>
+    <string name="longitude_string">Longitude</string>
+    <string name="GPS_alert_dialog_title">GPS authentication in settings</string>
+    <string name="GPS_alert_dialog_text">GPS is not enabled. Do you want to go to settings menu?</string>
+    <string name="GPS_alert_positive_button_text">Settings</string>
+    <string name="GPS_alert_negative_button_text">Cancel</string>
+    <!-- End GPS strings-->
+
+    <!-- Restaurant Cell/Detail Activity strings -->
+    <string name="currency_symbol">$</string>
+    <string name="default_price_range_string">Price</string>
+    <string name="restaurant_name_default_string">Name</string>
+    <string name="restaurant_address_default_string">Address</string>
+    <string name="restaurant_cuisines_default_string">Cuisines Types</string>
+    <string name="restaurant_website_button_default_text">website</string>
+    <string name="restaurant_price_for_two_default_text">Price for two: </string>
+    <string name="default_action_button_text">Add/Remove</string>
+    <string name="add_action_button_text">Add Restaurant</string>
+    <string name="remove_action_button_text">Remove Restaurant</string>
+    <string name="default_score_text">0</string>
+    <!-- End Search/Detail Activity strings -->
+
+    <!-- Main Activity strings -->
+    <string name="activity_main_groups_button_text">Groups</string>
+    <string name="activity_main_default_group_name">Group Name</string>
+    <string name="activity_main_search_button_text">Search:</string>
+    <string name="activity_main_restaurants_text">Restaurants:</string>
+    <!-- End Main Activity Strings -->
+
+    <!-- Activity Group Detail -->
+    <string name="group_detail_group_name_default">Group Name</string>
+    <string name="group_detail_cancel_button_text">Cancel</string>
+    <string name="group_detail_remove_button_text">Remove</string>
+    <!-- End Activity Group Detail -->
+
+    <!-- Activity Group List and Group Cell strings -->
+    <string name="logout_button_text">Logout</string>
+    <string name="activity_group_list_new_group_button_text">New Group</string>
+    <string name="activity_group_list_title_text">Groups</string>
+    <string name="group_cell_group_name_default_text">Group Name</string>
+    <string name="group_cell_select_button_text">Select</string>
+    <!-- End Activity Group List and Group Cell strings -->
+
+    <!-- Activity New Group strings -->
+    <string name="activity_new_group_title_text">Create New Group</string>
+    <string name="activity_new_group_name_text">Name:</string>
+    <string name="activity_new_group_name_input_hint">Required</string>
+    <string name="activity_new_group_password_input_hint">Required</string>
+    <string name="activity_new_group_password_text">Password:</string>
+    <string name="activity_new_group_cancel_button_text">Cancel</string>
+    <string name="activity_new_group_create_button_text">Create</string>
+    <!-- End Activity New Group strings -->
+
+    <!--Search Activity / Search Results Activity strings-->
+    <string name="search_activity_title_text">Search Restaurants</string>
+    <string name="search_activity_name_text">Name:</string>
+    <string name="search_activity_name_input_hint">Optional</string>
+    <string name="search_activity_cuisines_text">Cuisines:</string>
+    <string name="search_activity_number_results_text"># Results:</string>
+    <string name="search_activity_street_name_text">Street Name:</string>
+    <string name="search_activity_street_name_input_hint">Optional (exclude suffix)</string>
+    <string name="search_activity_search_button_text">Search</string>
+    <string name="search_results_activity_title_text">Search Results:</string>
+    <!--End Search Activity / Search Results Activity strings-->
+
+    <!-- Authentication -->
+    <string name="signup_activity_email_empty">Enter email address!</string>
+    <string name="signup_activity_password_empty">Enter password!</string>
+    <string name="signup_activity_password_too_short">Password too short, enter minimum 6 characters!</string>
+    <string name="action_sign_in_short">Register</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="send_password_reset_email">Send Password reset email</string>
+    <string name="remove_user">Remove user</string>
+    <string name="new_pass">New Password</string>
+    <string name="title_activity_profile">Firebase</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Not a member? Sign up now!</string>
+    <string name="btn_link_to_login">Already registered. Login Me!</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="hint_new_email">New Email</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_send">Send</string>
+    <string name="btn_remove">Remove</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <!-- End Auth -->
+
+    <string-array name="cuisinesTypes">
+        <item>All</item>
+        <item>Fast Food</item>
+        <item>American</item>
+        <item>Chinese</item>
+        <item>Italian</item>
+        <item>Burger</item>
+        <item>Pizza</item>
+        <item>Sandwich</item>
+        <item>Asian</item>
+        <item>Mexican</item>
+        <item>Breakfast</item>
+        <item>Ice Cream</item>
+        <item>Indian</item>
+        <item>Korean</item>
+        <item>Mediterranean</item>
+    </string-array>
+    <integer-array name="cuisineTypesIntegers">
+        <item>-1</item> <!-- All -->
+        <item>40</item> <!-- Fast Food -->
+        <item>1</item> <!-- American -->
+        <item>25</item> <!-- Chinese -->
+        <item>55</item> <!-- Italian -->
+        <item>168</item> <!-- Burger -->
+        <item>82</item> <!-- Pizza -->
+        <item>304</item> <!-- Sandwich -->
+        <item>3</item> <!-- Asian -->
+        <item>73</item> <!-- Mexican -->
+        <item>182</item> <!-- Breakfast -->
+        <item>233</item> <!-- Ice Cream -->
+        <item>148</item> <!-- Indian -->
+        <item>67</item> <!-- Korean -->
+        <item>70</item> <!-- Mediterranean -->
+    </integer-array>
+    <string-array name="resultsIntegers">
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+    </string-array>
+</resources>
+

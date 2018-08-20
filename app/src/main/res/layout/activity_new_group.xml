@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_new_group_title_text"
+        android:textAlignment="center"
+        android:textSize="36sp"/>
+
+    <!-- Name input linear layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_new_group_name_text"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:layout_weight=".3"/>
+
+        <EditText
+            android:id="@+id/new_group_name_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/activity_new_group_name_input_hint"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight=".7"/>
+
+    </LinearLayout>
+
+    <!-- Password input linear layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_new_group_password_text"
+            android:textAlignment="textEnd"
+            android:textSize="16sp"
+            android:layout_weight=".3"/>
+
+        <EditText
+            android:id="@+id/new_group_password_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/activity_new_group_password_input_hint"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight=".7"/>
+
+    </LinearLayout>
+
+    <!-- Linear layout containing submit/cancel buttons. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"/>
+
+        <Button
+            android:id="@+id/new_group_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_new_group_cancel_button_text"
+            android:layout_marginStart="16dp"/>
+
+        <!--Spacer-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/new_group_create_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_new_group_create_button_text"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+
+</LinearLayout>

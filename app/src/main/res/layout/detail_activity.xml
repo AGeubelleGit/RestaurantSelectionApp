@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <!-- Linear layout containing the name of the restaurant and the website button. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- Text view with Name of restaurant. -->
+        <TextView
+            android:id="@+id/detail_name_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="100"
+            android:text="@string/restaurant_name_default_string"
+            android:layout_marginStart="8dp"
+            android:textSize="26sp" />
+
+        <!-- Button that when pressed opens up browser at the restaurant's website. -->
+        <Button
+            android:id="@+id/detail_website_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/restaurant_website_button_default_text"/>
+
+    </LinearLayout>
+
+    <!-- Button that shows the address and when pressed opens up maps. -->
+    <Button
+        android:id="@+id/detail_address_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restaurant_address_default_string"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Linear layout containing the cusine types and price in terms of dolalr signs. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- Text view of the different cuisine types. -->
+        <TextView
+            android:id="@+id/detail_cuisine_types_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textSize="20sp"
+            android:text="@string/restaurant_cuisines_default_string"/>
+
+        <!-- Text view of the price. -->
+        <TextView
+            android:id="@+id/detail_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:textAlignment="textEnd"
+            android:textSize="20sp"
+            android:text="@string/default_price_range_string"/>
+    </LinearLayout>
+
+    <!-- Text view of the average price of two people eating at this restaurant. -->
+    <TextView
+        android:id="@+id/price_for_two_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/restaurant_price_for_two_default_text"
+        android:textSize="20sp"/>
+
+    <!-- Button to Add/Remove the restaurant from the main list. -->
+    <Button
+        android:id="@+id/detail_activity_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:text="@string/default_action_button_text"
+        android:textSize="12sp"/>
+
+</LinearLayout>
